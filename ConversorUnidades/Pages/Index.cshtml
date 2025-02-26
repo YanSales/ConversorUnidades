@@ -111,9 +111,27 @@
                         <input type="number" class="form-control mb-2" step="0.01" id="volumeValue" placeholder="Valor"
                             required>
                         <select class="form-select mb-2" id="volumeType">
-                            <option value="lToGal">Litros → Galões</option>
-                            <option value="galToL">Galões → Litros</option> <!-- Nova -->
-                            <option value="mlToCup">ml → Xícaras</option> <!-- Nova -->
+                            <!-- Sistema Métrico -->
+                            <option value="lToM3">Litros → m³</option>
+                            <option value="m3ToL">m³ → Litros</option>
+                            <option value="mlToCm3">ml → cm³</option>
+
+                            <!-- Sistema Imperial (EUA) -->
+                            <option value="galToQt">Galões (EUA) → Quartos</option>
+                            <option value="qtToGal">Quartos → Galões (EUA)</option>
+                            <option value="flOzToMl">Fluid Ounces → ml</option>
+
+                            <!-- Sistema Imperial (UK) -->
+                            <option value="ukGalToL">Galões (UK) → Litros</option>
+                            <option value="lToUkGal">Litros → Galões (UK)</option>
+
+                            <!-- Utensílios de Cozinha -->
+                            <option value="cupToMl">Xícaras → ml</option>
+                            <option value="tbspToMl">Colheres de Sopa → ml</option>
+                            <option value="tspToMl">Colheres de Chá → ml</option>
+
+                            <!-- Unidades de Petróleo -->
+                            <option value="bblToGal">Barris → Galões</option>
                         </select>
                         <button type="submit" class="btn btn-warning w-100">Calcular</button>
                     </form>
