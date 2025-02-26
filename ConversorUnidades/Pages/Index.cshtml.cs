@@ -1,19 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ConversorUnidades.Pages;
-
-public class IndexModel : PageModel
+namespace ConversorUnidades.Pages
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
+    public class IndexModel : PageModel
     {
-        _logger = logger;
-    }
-
-    public void OnGet()
-    {
-
+        public void OnGet()
+        {
+        }
     }
 }

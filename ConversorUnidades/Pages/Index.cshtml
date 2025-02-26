@@ -1,10 +1,155 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Conversor de Unidades Online Gratuito";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+    <h1 class="text-center mb-4 display-4 text-primary">📏 Conversor Universal</h1>
+
+    <!-- Anúncio Topo -->
+    <div class="text-center mb-4">
+        <!-- Insira código AdSense aqui -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXX" data-ad-slot="YYYYY"></ins>
+    </div>
+
+    <div class="row g-4">
+        <!-- Card Peso -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow">
+                <div class="card-header bg-primary text-white">
+                    ⚖️ Peso
+                </div>
+                <div class="card-body">
+                    <form method="post" onsubmit="return convertUnit('weight')">
+                        <input type="number" class="form-control mb-2" step="0.01" id="weightValue" placeholder="Valor"
+                            required>
+                        <select class="form-select mb-2" id="weightType">
+                            <option value="kgToLb">kg → Libras</option>
+                            <option value="lbToKg">Libras → kg</option>
+                            <option value="gToOz">Gramas → Onças</option>
+                            <option value="ozToG">Onças → Gramas</option>
+                            <option value="stoneToLb">Pedras → Libras</option> <!-- Nova -->
+                        </select>
+                        <button type="submit" class="btn btn-primary w-100">Calcular</button>
+                    </form>
+                    <div id="weightResult" class="mt-2 text-success fw-bold"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Distância -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow">
+                <div class="card-header bg-success text-white">
+                    🛣️ Distância
+                </div>
+                <div class="card-body">
+                    <form method="post" onsubmit="return convertUnit('distance')">
+                        <input type="number" class="form-control mb-2" step="0.01" id="distanceValue"
+                            placeholder="Valor" required>
+                        <select class="form-select mb-2" id="distanceType">
+                            <option value="kmToMi">km → Milhas</option>
+                            <option value="miToKm">Milhas → km</option> <!-- Nova -->
+                            <option value="mToFt">Metros → Pés</option>
+                            <option value="ftToM">Pés → Metros</option> <!-- Nova -->
+                            <option value="cmToIn">cm → Polegadas</option> <!-- Nova -->
+                        </select>
+                        <button type="submit" class="btn btn-success w-100">Calcular</button>
+                    </form>
+                    <div id="distanceResult" class="mt-2 text-success fw-bold"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Temperatura -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow">
+                <div class="card-header bg-danger text-white">
+                    🌡️ Temperatura
+                </div>
+                <div class="card-body">
+                    <form method="post" onsubmit="return convertUnit('temperature')">
+                        <input type="number" class="form-control mb-2" step="0.01" id="tempValue" placeholder="Valor"
+                            required>
+                        <select class="form-select mb-2" id="tempType">
+                            <option value="cToF">Celsius → Fahrenheit</option>
+                            <option value="fToC">Fahrenheit → Celsius</option> <!-- Nova -->
+                            <option value="cToK">Celsius → Kelvin</option> <!-- Nova -->
+                        </select>
+                        <button type="submit" class="btn btn-danger w-100">Calcular</button>
+                    </form>
+                    <div id="tempResult" class="mt-2 text-success fw-bold"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Volume -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow">
+                <div class="card-header bg-warning text-dark">
+                    🧴 Volume
+                </div>
+                <div class="card-body">
+                    <form method="post" onsubmit="return convertUnit('volume')">
+                        <input type="number" class="form-control mb-2" step="0.01" id="volumeValue" placeholder="Valor"
+                            required>
+                        <select class="form-select mb-2" id="volumeType">
+                            <option value="lToGal">Litros → Galões</option>
+                            <option value="galToL">Galões → Litros</option> <!-- Nova -->
+                            <option value="mlToCup">ml → Xícaras</option> <!-- Nova -->
+                        </select>
+                        <button type="submit" class="btn btn-warning w-100">Calcular</button>
+                    </form>
+                    <div id="volumeResult" class="mt-2 text-success fw-bold"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Anúncio Meio da Página -->
+    <div class="text-center mt-4">
+        <!-- Insira código AdSense aqui -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXX" data-ad-slot="ZZZZZ"></ins>
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        function convertUnit(category) {
+            const value = parseFloat(document.getElementById(`${category}Value`).value);
+            const type = document.getElementById(`${category}Type`).value;
+            let result = 0;
+
+            // Lógica de conversão
+            switch (type) {
+                // Peso
+                case 'kgToLb': result = value * 2.20462; break;
+                case 'lbToKg': result = value / 2.20462; break;
+                case 'gToOz': result = value * 0.035274; break;
+                case 'ozToG': result = value / 0.035274; break;
+                case 'stoneToLb': result = value * 14; break; // 1 pedra = 14 libras
+
+                // Distância
+                case 'kmToMi': result = value * 0.621371; break;
+                case 'miToKm': result = value / 0.621371; break;
+                case 'mToFt': result = value * 3.28084; break;
+                case 'ftToM': result = value / 3.28084; break;
+                case 'cmToIn': result = value * 0.393701; break;
+
+                // Temperatura
+                case 'cToF': result = (value * 9 / 5) + 32; break;
+                case 'fToC': result = (value - 32) * 5 / 9; break;
+                case 'cToK': result = value + 273.15; break;
+
+                // Volume
+                case 'lToGal': result = value * 0.264172; break;
+                case 'galToL': result = value / 0.264172; break;
+                case 'mlToCup': result = value * 0.00422675; break; // 1 ml = 0.00422675 xícaras
+            }
+
+            document.getElementById(`${category}Result`).innerHTML = `${value} → ${result.toFixed(2)}`;
+            return false; // Evita reload da página
+        }
+    </script>
+}

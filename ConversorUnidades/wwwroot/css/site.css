@@ -20,3 +20,22 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.card {
+  transition: transform 0.2s;
+  border: none;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  font-weight: 500;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
