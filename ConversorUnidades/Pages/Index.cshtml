@@ -157,7 +157,12 @@
 
             // Lógica de conversão
             switch (type) {
-                // ===== PESO =====
+                // Peso
+                case 'kgToLb': result = value * 2.20462; break;
+                case 'lbToKg': result = value / 2.20462; break;
+                case 'gToOz': result = value * 0.035274; break;
+                case 'ozToG': result = value / 0.035274; break;
+                case 'stoneToLb': result = value * 14; break; // 1 pedra = 14 libras
                 case 'kgToSt': result = value * 0.157473; break;       // 1 kg = 0.157473 pedras
                 case 'stToKg': result = value * 6.35029; break;        // 1 pedra = 6.35029 kg
                 case 'mgToG': result = value / 1000; break;
@@ -168,7 +173,13 @@
                 case 'troyOzToOz': result = value / 0.911458; break;
                 case 'caratToG': result = value * 0.2; break;          // 1 quilate = 0.2g
 
-                // ===== DISTÂNCIA =====
+
+                // Distância
+                case 'kmToMi': result = value * 0.621371; break;
+                case 'miToKm': result = value / 0.621371; break;
+                case 'mToFt': result = value * 3.28084; break;
+                case 'ftToM': result = value / 3.28084; break;
+                case 'cmToIn': result = value * 0.393701; break;
                 case 'mToYd': result = value * 1.09361; break;
                 case 'ydToM': result = value / 1.09361; break;
                 case 'mmToFt': result = value * 0.00328084; break;
@@ -184,7 +195,10 @@
                 case 'fToC': result = (value - 32) * 5 / 9; break;
                 case 'cToK': result = value + 273.15; break;
 
-                // ===== VOLUME =====
+                // Volume
+                case 'lToGal': result = value * 0.264172; break;
+                case 'galToL': result = value / 0.264172; break;
+                case 'mlToCup': result = value * 0.00422675; break; // 1 ml = 0.00422675 xícaras
                 case 'lToM3': result = value / 1000; break;
                 case 'm3ToL': result = value * 1000; break;
                 case 'mlToCm3': result = value * 1; break;             // 1 ml = 1 cm³
