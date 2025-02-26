@@ -39,3 +39,21 @@ body {
   border-color: #0d6efd;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
+
+/* Tooltip Customizado */
+.tooltip-inner {
+  background-color: #333;
+  font-size: 14px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #333 !important;
+}
+
+.info-icon {
+  cursor: help;
+  margin-left: 5px;
+  color: #666;
+}
