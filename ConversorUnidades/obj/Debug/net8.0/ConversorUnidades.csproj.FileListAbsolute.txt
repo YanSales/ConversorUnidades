@@ -28,3 +28,4 @@ A:\Giselly\Documents\dotnet\ConversorUnidades\ConversorUnidades\obj\Debug\net8.0
 A:\Giselly\Documents\dotnet\ConversorUnidades\ConversorUnidades\obj\Debug\net8.0\ConversorUnidades.pdb
 A:\Giselly\Documents\dotnet\ConversorUnidades\ConversorUnidades\obj\Debug\net8.0\ConversorUnidades.genruntimeconfig.cache
 A:\Giselly\Documents\dotnet\ConversorUnidades\ConversorUnidades\obj\Debug\net8.0\ref\ConversorUnidades.dll
+A:\Giselly\Documents\dotnet\ConversorUnidades\ConversorUnidades\obj\Debug\net8.0\ConversorUnidades.sourcelink.json

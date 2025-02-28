@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8UmAQrYsFL23oddMR3CnU6dOBKBfysfw0BvhQ0a6RwE=",
+  "Hash": "lJhJg+q+OppCKznKZ89lBuxOedBxHlTC2iiNWZphgdE=",
   "Source": "ConversorUnidades",
   "BasePath": "_content/ConversorUnidades",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "A:\\Giselly\\Documents\\dotnet\\ConversorUnidades\\ConversorUnidades\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ConversorUnidades.bundle.scp.css"
+    },
+    {
+      "Identity": "A:\\Giselly\\Documents\\dotnet\\ConversorUnidades\\ConversorUnidades\\wwwroot\\ads.txt",
+      "SourceId": "ConversorUnidades",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\Giselly\\Documents\\dotnet\\ConversorUnidades\\ConversorUnidades\\wwwroot\\",
+      "BasePath": "_content/ConversorUnidades",
+      "RelativePath": "ads.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ads.txt"
     },
     {
       "Identity": "A:\\Giselly\\Documents\\dotnet\\ConversorUnidades\\ConversorUnidades\\wwwroot\\css\\site.css",
