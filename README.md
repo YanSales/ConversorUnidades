@@ -108,5 +108,3 @@ Guia completo em [DEPLOY.md](DEPLOY.md)
 ###### 🚨 **Aviso Legal**: Este projeto é otimizado para conformidade com as políticas do Google AdSense. Não clique em seus próprios anúncios!
 
 [![Último Commit](https://img.shields.io/github/last-commit/YanSales/ConversorUnidades?logo=github)](https://github.com/YanSales/ConversorUnidades/commits/main)
-
-[![Preview](https://raw.githubusercontent.com/YanSales/ConversorUnidades/main/docs/preview.png)](https://github.com/YanSales/ConversorUnidades)
