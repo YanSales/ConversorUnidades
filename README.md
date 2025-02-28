@@ -2,7 +2,7 @@
 
 ![.NET](https://img.shields.io/badge/.NET-8.0-%23512bd4?logo=.net)
 ![AdSense](https://img.shields.io/badge/AdSense-Enabled-%23FFCA28?logo=google-ads)
-![GitHub](https://img.shields.io/github/license/YanSales/ConversorUnidades?color=lightgrey)
+![GitHub](https://img.shields.io/github/license/YanSales/ConversorUnidades) 
 ![Code Size](https://img.shields.io/github/languages/code-size/YanSales/ConversorUnidades)
 
 **Converte tudo!** De temperatura a distâncias astronômicas 🌌  
